@@ -1,0 +1,37 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h" //getch
+
+using namespace std;
+
+void main ()
+
+{
+	float b,area;
+	
+	
+	
+
+	
+	
+	
+	cout<< "Ingrese la base : ";
+	
+	
+	cin>>b;
+	
+	
+	
+	cout<< ":Ingrese la base ";
+	cin>>b;
+	
+	// Salida 
+	area= (b*b);
+	cout<<"el area es :"<<area ;
+
+	getch();
+
+
+
+}
+
