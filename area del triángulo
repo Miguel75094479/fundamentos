@@ -1,0 +1,37 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h" //getch
+
+using namespace std;
+
+void main ()
+
+{
+	float a,b,area;
+	
+	
+	
+	//Pedir el siguiente sumando
+	
+	
+	
+	cout<< "Ingrese la base : ";
+	
+	
+	cin>>a;
+	
+	
+	//Pedir el segundo sumando
+	cout<< ":Ingrese la altura ";
+	cin>>b;
+	
+	// Salida 
+	area= (b*a)/2;
+	cout<<"el area es :"<<area ;
+
+	getch();
+
+
+
+}
+
