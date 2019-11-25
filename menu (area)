@@ -1,0 +1,62 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+float AreaCuadrado(float L);
+float AreaTriangulo(float L); 
+float AreaSombreada(float L);
+	
+
+int main()
+{
+
+	do {
+	float L;
+	cout << "Ingresar L:";
+	cin >> L;
+	cout << "[1]-> Calculo Area Cuadrado" << endl;
+	cout << "[2]-> Calculo Area Triangulo" << endl;
+	cout << "[3]-> Calculo Area Sombreada" << endl;
+	cout << "[4]-> Finalizar" << endl;
+	cout << "Seleccione una opción:" << endl;
+	int opc;
+	cin >> opc;
+	switch (opc) {
+	case 1: 
+		cout << AreaCuadrado(L) << endl;
+		break;
+	case 2: 
+		cout << AreaTriangulo(L) << endl;
+		break;
+	case 3: 
+		cout << AreaSombreada(L) << endl;
+		break;
+	case 4: 
+		cout << "Finalizar..." << endl;
+		break;
+	default: 
+		cout << "Error..." << endl;
+		break;
+	}
+	}while (op¡=4);
+	getch();
+
+	float AreaCuadrado(float L) {
+	float A;
+	A = L * L;
+	return A;
+}
+float AreaTriangulo(float L) {
+	float A;
+	A = (L * L) / 2;
+	return A;
+}
+float AreaSombreada(float L) {
+	float A;
+	A = AreaCuadrado(L)-AreaTriangulo(L);
+	return A;
+}
+
+}
